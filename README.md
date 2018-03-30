@@ -1,4 +1,4 @@
-##How do we create an object in JavaScript that inherits from another object?
+## How do we create an object in JavaScript that inherits from another object?
 
 We create a Teacher class, which inherits all the members from Person, but also includes:
 1. A new property, subject — this will contain the subject the teacher teaches.
