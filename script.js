@@ -7,13 +7,15 @@ function Person(first, last, age, gender, interests) {
     this.gender = gender;
     this.salutation = gender =="male" ? "He": "She";
     this.interests = interests;
-    this.bio = function() {
-        return (`${this.name.first} ${this.name.last} is ${this.age} years old. ${this.salutation} likes ${this.interests[0]} and ${this.interests[1]} .`);
-      };
-    this.greeting = function() {
-        return ('Hi! I\'m ' + this.name.first + '.');
-      };
 }
+
+Person.prototype.bio = function() {
+    return (`${this.name.first} ${this.name.last} is ${this.age} years old. ${this.salutation} likes ${this.interests[0]} and ${this.interests[1]} .`);
+  };
+
+Person.prototype.greeting = function() {
+    return ('Hi! I\'m ' + this.name.first + '.');
+  };
 
 var person1 = new Person('July', 'Smith', 32, 'female', ['music', 'skiing']);
 
