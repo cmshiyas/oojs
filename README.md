@@ -1,8 +1,8 @@
-Prototypes are the mechanism by which JavaScript objects inherit features from one another. 
+##How do we create an object in JavaScript that inherits from another object?
 
-We look at how the prototype property can be used to add methods to existing constructors.
+We create a Teacher class, which inherits all the members from Person, but also includes:
+1. A new property, subject — this will contain the subject the teacher teaches.
+2. An updated greeting() method, which sounds a bit more formal than the standard greeting() method — more suitable for a teacher addressing some students at school.
 
-JavaScript is often described as a prototype-based language — each object has a prototype object, which acts as a template object that it inherits methods and properties from. An object's prototype object may also have a prototype object, which it inherits methods and properties from, and so on. This is often referred to as a prototype chain, and explains why different objects have properties and methods defined on other objects available to them.
 
-Well, to be exact, the properties and methods are defined on the prototype property on the Objects' constructor functions, not the object instances themselves.
-
+Prototypes and inheritance represent some of the most complex aspects of JavaScript, but a lot of JavaScript's power and flexibility comes from its object structure and inheritance, and it is worth understanding how it works.
